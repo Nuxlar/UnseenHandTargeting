@@ -1,10 +1,10 @@
 ﻿{
-	"name": "NewMod",
-	"version_number": "1.0.0",
-	"website_url": "",
-	"description": "Template",
+	"name": "UnseenHandTargeting",
+	"version_number": "1.0.3",
+	"website_url": "https://github.com/Nuxlar/UnseenHandTargeting/issues",
+	"description": "Improves targeting of Seeker's Unseen Hand (Secondary) ability. Allowing you to hit flying enemies easily.",
 	"dependencies": [
-		"bbepis-BepInExPack-5.4.2117",
-		"RiskofThunder-HookGenPatcher-1.2.4"
+		"bbepis-BepInExPack-5.4.2118",
+		"RiskofThunder-HookGenPatcher-1.2.8"
 	]
 }

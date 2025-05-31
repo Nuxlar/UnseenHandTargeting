@@ -45,12 +45,6 @@
 
     <Copy SourceFiles="$(BuildDir)icon.png" DestinationFolder="$(TSPackageDir)" ContinueOnError="true" />
 
-    <ItemGroup>
-      <LangFiles Include="$(SolutionDir)lang/**/*.*" />
-    </ItemGroup>
-
-    <Copy SourceFiles="@(LangFiles)" DestinationFolder="$(TSPackagePluginDir)/lang/%(RecursiveDir)" />
-
     <Delete Files="$(TSPackagePluginDir)/$(AssemblyName).dll" />
     <Delete Files="$(TSPackagePluginDir)/$(AssemblyName).pdb" Condition="'$(Configuration)'=='Release'" ContinueOnError="true" />
 
