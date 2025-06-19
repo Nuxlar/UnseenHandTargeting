@@ -12,7 +12,7 @@ namespace UnseenHandTargeting
     public const string PluginGUID = PluginAuthor + "." + PluginName;
     public const string PluginAuthor = "Nuxlar";
     public const string PluginName = "UnseenHandTargeting";
-    public const string PluginVersion = "1.0.3";
+    public const string PluginVersion = "1.0.4";
 
     internal static Main Instance { get; private set; }
     public static string PluginDirectory { get; private set; }
@@ -38,10 +38,9 @@ namespace UnseenHandTargeting
       RaycastHit hitInfo;
       if (Physics.Raycast(CameraRigController.ModifyAimRayIfApplicable(self.GetAimRay(), self.gameObject, out extraRaycastDistance), out hitInfo, maxDistance + extraRaycastDistance, LayerIndex.CommonMasks.bullet))
       {
-        Vector3 position = RaycastToFloor(hitInfo.point);
+        Vector3 position = RaycastToFloor(hitInfo.point + new Vector3(0, 1, 0));
         self.areaIndicatorInstance.transform.position = position;
         self.goodPlacement = true;
-        // self.goodPlacement = (double)Vector3.Angle(Vector3.up, hitInfo.normal) < UnseenHand.maxSlopeAngle;
       }
       int num2 = self.goodPlacement ? 1 : 0;
       if (num1 != num2 || self.crosshairOverrideRequest == null)

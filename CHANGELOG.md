@@ -1,3 +1,7 @@
+**1.0.4**
+
+- Fixes targeting sometimes going through the floor on higher platforms (like in abyssal)
+
 **1.0.3**
 
 - Tweaks code to make indicator placement smoother and more consistent

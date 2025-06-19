@@ -1,6 +1,6 @@
 ﻿{
 	"name": "UnseenHandTargeting",
-	"version_number": "1.0.3",
+	"version_number": "1.0.4",
 	"website_url": "https://github.com/Nuxlar/UnseenHandTargeting/issues",
 	"description": "Improves targeting of Seeker's Unseen Hand (Secondary) ability. Allowing you to hit flying enemies easily.",
 	"dependencies": [
